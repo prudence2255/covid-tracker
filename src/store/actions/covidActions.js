@@ -20,7 +20,7 @@ export const getGlobalData = createAsyncThunk(
      const res = await axios.get(url);
       return res.data;  
       } catch (error) {
-        console.log(error)
+        return thunk.rejectWithValue(error.message)
       }
     }
   );
@@ -38,7 +38,7 @@ export const getGlobalData = createAsyncThunk(
 
     return res.data;   
       } catch (error) {
-        console.log(error)
+        return thunk.rejectWithValue(error.message)
       }
     }
   );
@@ -57,7 +57,7 @@ export const getGlobalData = createAsyncThunk(
      return res.data;  
 
       } catch (error) {
-        console.log(error)
+        return thunk.rejectWithValue(error.message)
       }
     }
   );

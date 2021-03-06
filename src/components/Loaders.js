@@ -31,16 +31,16 @@ export const ChartLoader = () => {
         <>
             <div className="row mx-1 mt-5">
            <div className="col-md-8 bg-white d-flex mx-auto">
-            <div className="mx-5">
+            <div className="mx-auto">
             <Skeleton height={300} width={50}/>
             </div>
-            <div className="mx-5">
+            <div className="mx-auto">
             <Skeleton height={300} width={50}/> 
             </div>
-            <div className="mx-5">
+            <div className="mx-auto">
             <Skeleton height={300} width={50}/> 
             </div>
-            <div className="mx-5 d-none d-lg-block">
+            <div className="mx-auto d-none d-lg-block">
             <Skeleton height={300} width={50}/> 
             </div>
            </div>
