@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/app.scss';
+import './styles/w3.css';
+import Card from 'components/Card';
+import Chart from 'components/Chart';
+import CountryPicker from 'components/CountryPicker';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app container">
+    <div className="row mb-2">
+<div className="col-md-4 mx-auto text-center">
+<img src="/covid-19.png" className="img-fluid" alt="covid-19"/>
+</div>
     </div>
-  );
+      <Card />
+      <CountryPicker />
+      <Chart />
+    </div>
+  )
 }
 
 export default App;
+
+
+
+
+
+
+
+

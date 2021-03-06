@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+
+html,
+body{
+    font-family: 'OPen sans', 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    background-color:#e9ecef
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.app{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-bottom: 5px solid green;
+}
+.cards {
+    .w3-card-4{
+        padding: 15px 10px;
+        height: 200px;
+        line-height: 35px;
+        text-align: center;
+        margin: 15px 0px;
+    }
+    h4{
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .count, p{
+        font-weight: bold;
+    }
+    .deaths{
+        border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+    }
+
+    .infected{
+       border-bottom: 10px solid rgba(0, 0, 255, 0.5); 
+    }
+
+    .recovered{
+        border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    }
+
+    @media(max-width: 768px) {
+        .w3-card-4{
+           margin: 15px 0px;
+        }  
+    }
+}
+
