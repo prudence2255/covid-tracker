@@ -18,7 +18,15 @@ body{
     margin-bottom: 100px;
     border-bottom: 5px solid green;
 }
+
 .cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-box{
+        width: 32%;
+        margin: 0 auto;
+    }
     .w3-card-4{
         padding: 15px 10px;
         height: 200px;
@@ -46,10 +54,21 @@ body{
         border-bottom: 10px solid rgba(0, 255, 0, 0.5);
     }
 
-    @media(max-width: 768px) {
-        .w3-card-4{
-           margin: 15px 0px;
-        }  
-    }
+   
+}
+
+
+@media(max-width: 768px) {
+    .cards{
+        .card-box{
+            width: 70%;
+        }
+    .w3-card-4{
+        padding: 10px;
+       margin: 15px 0px;
+       height: 150px;
+       line-height: 25px;
+    } 
+} 
 }
 

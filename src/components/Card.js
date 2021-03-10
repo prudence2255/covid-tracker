@@ -26,7 +26,7 @@ if(loading){
     // }
     return (
         <div className="row cards">
-            <div className="col-md-4">
+            <div className="card-box">
                 <div className="w3-card-4 bg-white infected">
                     <h4>Infected</h4>
                     <CountUp 
@@ -42,7 +42,7 @@ if(loading){
                     </p>
                 </div>
             </div>
-            <div className="col-md-4">
+            <div className="card-box">
                 <div className="w3-card-4 bg-white recovered">
                     <h4>Recovered</h4>
                     <CountUp 
@@ -58,7 +58,7 @@ if(loading){
                     </p>
                 </div>
             </div>
-            <div className="col-md-4">
+            <div className="card-box">
                 <div className="w3-card-4 bg-white deaths">
                     <h4>Deaths</h4>
                     <CountUp 

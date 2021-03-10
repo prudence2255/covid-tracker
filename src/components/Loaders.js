@@ -6,7 +6,7 @@ export const CardLoader = () => {
         <>
             <div className="row">
                 {Array(3).fill(1).map((item, i)=> (
-                    <div className="col-md-4" key={i}>
+                    <div className="col-md-4 my-2" key={i}>
                     <div className="w3-card-4 bg-white infected p-3" style={{height: '180px'}}>
                     <h4> <Skeleton width={70}/></h4>
                     
